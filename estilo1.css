@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+
+:root {
+	--primary-color: #005f6a;
+	--background-color: #fcfbfa;
+	--dark-color: #949494;
+}
+
+html {
+	/* font-size: 62.5%; */
+	font-family: 'Ubuntu', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+     height: 100vh;
+     display:grid;
+     place-items: center;
+     /* background-image: url(imagenes.JPG/Imagen1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover; */
+     padding: 15px 20px;
+}
+.titulo-externo{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+}
+.wrapper{
+    background: #3AB795;
+    padding: 30px 118px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background:#fff;
+}
+.wrapper .title{
+    font-size: 34px;
+    font-weight: 400;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+form .option{
+    text-align: center;
+    margin: 30px 0 15px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+form .option .Google{
+    margin: 20px 0;
+    padding: 10px 15px;
+    background: #3b9888;
+    border-radius: 5px;
+    width: 150%;
+    height: 55px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+.input-box.button .Google:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+form .option .Google a{
+    text-decoration: none;
+    color: #6f6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    margin: 0% auto;
+}
+form .option .Google {
+    background: white;
+    border: 2px solid #ccc;
+    background-image: url("Imagenes.SVG/Google.svg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    box-shadow: rgba(128, 128, 128, 0.2);
+    font-weight: bold;
+    text-align: center;
+    margin-left: -56px;
+}
+.wrapper form .input-box {
+    width: 130%;
+    height: 55px;
+    margin-bottom: 30px;
+    margin-left: -43px;
+}
+.wrapper form .remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px 0 15px 0;
+}
+.wrapper form .remember{
+    display:flex;
+    font-size: 13px;
+    font-weight: 500;
+    color:#009579;
+}
+.wrapper form .remember input{
+    margin-right: 5px;
+    margin-left: -80px;
+}
+.wrapper form .forgot{
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: -85px;
+}
+.wrapper form .input-box {
+    position: relative;
+}
+.wrapper form .input-box input {
+    width: 145%;
+    height: 100%;
+    margin-left: -50px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 20px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+/* .wrapper form .input-box input:hover,
+.wrapper form .input-box input:valid{
+    transform: scale(1.05);
+} */
+.email {
+    background-image: url("imagenes.PNG/gmail.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 347px center;
+}
+#toggle-password-btn {
+    position: absolute;
+    margin-top: -226px;
+    margin-left: 152px;
+    transform: translate(-1%);
+    border: none;
+    background-color: white;
+}
+.ojo-img {
+    position: absolute;
+    top: 3px;
+    width: 25px;
+    align-items: center;
+    background-position: center;
+}
+.inicio-seccion {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.919);
+}
+
+.inicio-seccion:hover{
+    background-color: var(--background-color);
+	color: var(--primary-color);
+}
+.wrapper form .forgot a{
+    text-decoration:none;
+    color: #009579;
+}
+.wrapper form .forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper form .button input [type="submit"]{
+    padding:0;
+    font-size: 18px;
+    font-weight: 500;
+    background: #009579;
+    color:#fff;
+    border: none;
+    transform: none;
+}
+.wrapper form .signup-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.wrapper form .signup-link a{
+    text-decoration: none;
+    color: #009579;
+}
+.wrapper form .signup-link a:hover {
+    text-decoration: underline ;
+     
+}
+.wrapper form .footer-item a{
+    text-decoration: none;
+    color: #1975e64e;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+footer a{
+    text-decoration: none;
+    color: #314764
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 15px; 
+    color: #1975e64e;
+    margin-left: 2px;
+}
+footer ul li:last-child {
+    margin-right: 0;
+}
+.linea-footer{
+    width: 100%;
+    border-bottom: 1px;
+    border: none;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    color: rgb(227, 219, 219);
+}
+.nombre_pagina {
+    font-weight: bold;
+    margin-top: 13px;
+    color: black
+}
