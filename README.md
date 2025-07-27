@@ -1,64 +1,120 @@
+
 # 🛒 D&D Software
 
-**D&D Software** es una tienda virtual de ropa y calzado desarrollada en **PHP puro**, diseñada para ofrecer simplicidad y rendimiento, ahora **totalmente dockerizada** para facilitar su despliegue en cualquier entorno.
+**D&D Software** es una tienda virtual de ropa y calzado desarrollada en **PHP puro**, diseñada para ofrecer simplicidad, velocidad y facilidad de despliegue. Está preparada para funcionar completamente con **Docker**, eliminando la necesidad de usar XAMPP u otros entornos locales complicados.
 
 ---
 
 ## 🚀 Características
 
-- Catálogo de productos de ropa y calzado.
-- Carrito de compras básico.
-- Registro e inicio de sesión de usuarios.
-- Panel administrativo para gestionar productos.
-- Backend en PHP puro sin frameworks.
-- Despliegue rápido con Docker y Docker Compose.
+- 🧢 Catálogo de ropa y calzado.
+- 🛒 Carrito de compras funcional.
+- 👤 Registro e inicio de sesión.
+- 🧑‍💼 Panel administrativo (básico).
+- 📦 Backend en PHP sin frameworks.
+- 🐳 Despliegue con Docker y Docker Compose.
 
 ---
 
 ## 🐳 Stack Tecnológico
 
-- **PHP** (puro, sin frameworks)
+- **PHP** (puro)
 - **MySQL** como base de datos
-- **Apache** dentro del contenedor (vía Docker)
-- **Docker Compose** para orquestar todo
+- **Apache** (dentro del contenedor)
+- **Docker** + **Docker Compose**
 
 ---
 
 ## ⚙️ Requisitos
+
+Antes de comenzar, asegúrate de tener instalados:
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
 ---
 
-## 🚀 Instalación con Docker
+## 📦 Instalación con Docker
 
 1. Clona este repositorio:
 
    ```bash
    git clone https://github.com/JESUS-VN10/D-D-Software.git
    cd D-D-Software
-   
+   ```
+
+   Comandos útiles para correr el proyecto con Docker:
+
+   ```bash
+   docker compose down                   # Detiene y elimina los contenedores
+   docker-compose up -d                 # Inicia los contenedores en segundo plano
+   docker compose up -d --build         # Reconstruye la imagen y levanta contenedores
+   docker-compose restart               # Reinicia los contenedores
+   ```
+
+2. Crea el archivo `.env` con las siguientes variables de entorno:
+
+   ```env
+   DB_HOST=db
+   DB_NAME=dd_store
+   DB_USER=root
+   DB_PASSWORD=secret
+   ```
+
+3. Levanta los contenedores:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+4. Accede desde tu navegador:
+
+   - Sitio principal: [http://localhost:8000](http://localhost:8000)
+   - phpMyAdmin (si está incluido): [http://localhost:8080](http://localhost:8080)
+
 ---
 
-MIT License
+## 🗂️ Estructura del Proyecto
 
-Copyright (c) 2025 D&D SOFTWARE
+```
+D-D-Software/
+├── CSS/                # Estilos del frontend
+├── JS/                 # Scripts de la tienda
+├── IMG/                # Imágenes de productos e iconos
+├── Config/             # Configuración y conexión a BD
+├── *.php               # Páginas principales
+├── Dockerfile
+├── docker-compose.yml
+├── .env                # Variables de entorno
+├── .gitignore
+└── README.md
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 🧪 En desarrollo...
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- [ ] Integración de pasarela de pago (ej. Stripe o PayPal)
+- [ ] Buscador de productos
+- [ ] Filtros por categoría y precio
+- [ ] Subida de múltiples imágenes por producto
+- [ ] Panel de administración mejorado
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **MIT License**.  
+Consulta el archivo `LICENSE` para más información.
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado con 💻 y 🎧 por **Jesús VN**
+
+GitHub: [@JESUS-VN10](https://github.com/JESUS-VN10)
+
+---
+
+⭐ ¡Gracias por visitar D&D Software! Si te gustó el proyecto, no olvides dejar una estrella al repo 😉
