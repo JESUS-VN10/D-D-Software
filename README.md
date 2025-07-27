@@ -1,12 +1,41 @@
-Proyecto D&D RopaYCalzado
+# 🛒 D&D Software
 
-Estado: Available 
+**D&D Software** es una tienda virtual de ropa y calzado desarrollada en **PHP puro**, diseñada para ofrecer simplicidad y rendimiento, ahora **totalmente dockerizada** para facilitar su despliegue en cualquier entorno.
 
-Version = 0.2
+---
 
-Proyecto hecho con PHP puro sin ningún Framework, la verdad estoy loco
+## 🚀 Características
 
-Este estado del proyecto es funcional y se puede usar
+- Catálogo de productos de ropa y calzado.
+- Carrito de compras básico.
+- Registro e inicio de sesión de usuarios.
+- Panel administrativo para gestionar productos.
+- Backend en PHP puro sin frameworks.
+- Despliegue rápido con Docker y Docker Compose.
 
-Mi Abuelita Yaya cuando se cae de las escaleras a las 3AM: `https://www.tiktok.com/@novody_oficial/video/7489297305296801030?q=Mi%20Abuelita%20Yaya%20cuando%20se%20cae%20de%20las%20escalera&t=1744831358065`
-Tung Tung Tung Sahur Song All rights reserved ©Yisus 2025 `https://www.tiktok.com/@brainrot..master/video/7491067726903954710?lang=en`
+---
+
+## 🐳 Stack Tecnológico
+
+- **PHP** (puro, sin frameworks)
+- **MySQL** como base de datos
+- **Apache** dentro del contenedor (vía Docker)
+- **Docker Compose** para orquestar todo
+
+---
+
+## ⚙️ Requisitos
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+---
+
+## 🚀 Instalación con Docker
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/JESUS-VN10/D-D-Software.git
+   cd D-D-Software
+
