@@ -1,0 +1,33 @@
+# PHP
+vendor/
+*.log
+*.cache
+*.env
+.env.*
+composer.lock
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Node/npm (si tenés algo frontend)
+node_modules/
+npm-debug.log
+
+# Visual Studio Code
+.vscode/
+
+# Otros entornos comunes
+.idea/
+*.swp
+
+# Archivos temporales
+*.bak
+*.tmp
+*.old
+*.orig
