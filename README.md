@@ -52,11 +52,11 @@ Antes de comenzar, asegúrate de tener instalados:
    docker-compose restart               # Reinicia los contenedores
    ```
 
-2. Crea el archivo `.env` con las siguientes variables de entorno:
+2. Archivo `.env` con las siguientes variables de entorno:
 
    ```env
    DB_HOST=db
-   DB_NAME=
+   DB_NAME=bd_d&dsoftware
    DB_USER=root
    DB_PASSWORD=
    ```
