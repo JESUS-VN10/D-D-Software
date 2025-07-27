@@ -56,9 +56,9 @@ Antes de comenzar, asegúrate de tener instalados:
 
    ```env
    DB_HOST=db
-   DB_NAME=dd_store
+   DB_NAME=
    DB_USER=root
-   DB_PASSWORD=secret
+   DB_PASSWORD=
    ```
 
 3. Levanta los contenedores:
@@ -94,7 +94,6 @@ D-D-Software/
 
 ## 🧪 En desarrollo...
 
-- [ ] Integración de pasarela de pago (ej. Stripe o PayPal)
 - [ ] Buscador de productos
 - [ ] Filtros por categoría y precio
 - [ ] Subida de múltiples imágenes por producto
@@ -111,7 +110,7 @@ Consulta el archivo `LICENSE` para más información.
 
 ## 👨‍💻 Autor
 
-Desarrollado con 💻 y 🎧 por **Jesús VN**
+Desarrollado con 💻 y 🎧 por **Jesús y Daniel**
 
 GitHub: [@JESUS-VN10](https://github.com/JESUS-VN10)
 
