@@ -70,7 +70,7 @@ Antes de comenzar, asegúrate de tener instalados:
 4. Accede desde tu navegador:
 
    - Sitio principal: [http://localhost:8000](http://localhost:8000)
-   - phpMyAdmin (si está incluido): [http://localhost:8080](http://localhost:8080)
+   - phpMyAdmin: [http://localhost:8080](http://localhost:8080)
 
 ---
 
