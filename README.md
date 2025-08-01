@@ -17,7 +17,7 @@
 
 ## 🐳 Stack Tecnológico
 
-- **Laravel** como framework
+- **Laravel + Vue** como framework y framework de front-end
 - **MySQL** como base de datos
 - **XAMPP** como entorno de desarrollo
 
