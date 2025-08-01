@@ -1,6 +1,6 @@
 # 🛒 D&D Software
 
-**D&D Software** es una tienda virtual de ropa y calzado desarrollada en **PHP puro**, diseñada para ofrecer simplicidad y rendimiento, ahora **totalmente dockerizada** para facilitar su despliegue en cualquier entorno.
+**D&D Software** es una tienda virtual de ropa y calzado desarrollada en **Laravel**, diseñada para ofrecer simplicidad y rendimiento.
 
 ---
 
