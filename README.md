@@ -1,4 +1,3 @@
-
 # 🛒 D&D Software
 
 **D&D Software** es una tienda virtual de ropa y calzado desarrollada en **PHP puro**, diseñada para ofrecer simplicidad y rendimiento, ahora **totalmente dockerizada** para facilitar su despliegue en cualquier entorno.
@@ -18,10 +17,9 @@
 
 ## 🐳 Stack Tecnológico
 
-- **PHP** (puro)
+- **Laravel** como framework
 - **MySQL** como base de datos
-- **Apache** (dentro del contenedor)
-- **Docker** + **Docker Compose**
+- **XAMPP** como entorno de desarrollo
 
 ---
 
@@ -29,66 +27,54 @@
 
 Antes de comenzar, asegúrate de tener instalados:
 
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+- [Composer](https://getcomposer.org/download/)
+- [PHP](https://www.php.net/downloads.php)
 
 ---
 
-## 📦 Instalación con Docker
+## 📦 Instalación con Composer
 
 1. Clona este repositorio:
 
-   ```bash
-   git clone https://github.com/JESUS-VN10/D-D-Software.git
-   cd D-D-Software
-   ```
+    ```bash
+    git clone https://github.com/JESUS-VN10/D-D-Software.git
+    cd D-D-Software
+    ```
 
-   Comandos útiles para correr el proyecto con Docker:
+2. Instala las dependencias:
 
-   ```bash
-   docker compose down                   # Detiene y elimina los contenedores
-   docker-compose up -d                 # Inicia los contenedores en segundo plano
-   docker compose up -d --build         # Reconstruye la imagen y levanta contenedores
-   docker-compose restart               # Reinicia los contenedores
-   ```
+    ```bash
+    composer install
+    npm install
+    npm run build
+    ```
 
-2. Archivo `.env` con las siguientes variables de entorno:
+3. Migra la base de datos:
 
-   ```env
-   DB_HOST=db
-   DB_NAME=bd_d&dsoftware
-   DB_USER=root
-   DB_PASSWORD=
-   ```
+    ```bash
+    php artisan migrate                  # Migra la base de datos
+    ```
 
-3. Levanta los contenedores:
+4. Inicializa el servidor:
 
-   ```bash
-   docker-compose up -d
-   ```
+    ```bash
+    composer run dev                     # Inicia el servidor de desarrollo (Tanto el de Laraval como el de Vite)
+    ```
 
-4. Accede desde tu navegador:
-
-   - Sitio principal: [http://localhost:8000](http://localhost:8000)
-   - phpMyAdmin: [http://localhost:8080](http://localhost:8080)
+5. Accede desde tu navegador:
+    - Sitio web: [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 🗂️ Estructura del Proyecto
+    Comandos útiles para correr el proyecto con Composer:
 
-```
-D-D-Software/
-├── CSS/                # Estilos del frontend
-├── JS/                 # Scripts de la tienda
-├── IMG/                # Imágenes de productos e iconos
-├── Config/             # Configuración y conexión a BD
-├── *.php               # Páginas principales
-├── Dockerfile
-├── docker-compose.yml
-├── .env                # Variables de entorno
-├── .gitignore
-└── README.md
-```
+    ```bash
+    php artisan migrate                  # Migra la base de datos
+    php artisan db:seed                  # Inicializa la base de datos
+    php artisan key:generate             # Genera claves de cifrado
+    php artisan storage:link             # Vincula la carpeta de archivos
+    php artisan route:cache              # Actualiza la caché de rutas
+    ```
 
 ---
 
@@ -113,6 +99,7 @@ Consulta el archivo `LICENSE` para más información.
 Desarrollado con 💻 y 🎧 por **Jesús y Daniel**
 
 GitHub: [@JESUS-VN10](https://github.com/JESUS-VN10)
+GitHub: [@DanielEspitia1507](https://github.com/DanielEspitia1507)
 
 ---
 
