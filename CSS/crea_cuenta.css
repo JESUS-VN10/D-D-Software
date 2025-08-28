@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+	--primary-color: #282828;
+	--background-color: #f5f5f5;
+	--dark-color: #949494;
+}
+
+html {
+	font-family: 'Ubuntu', sans-serif;
+	font-family: "Noto Sans", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display:grid;
+    place-items: center;
+    /* background-image: url("imagenes.JPG/Imagen4.jpg");
+    background-size: cover; */
+    background-color: var(--background-color);
+    padding: 15px 20px;
+}
+
+.container-logo {
+	font-family: 'Roboto';
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+    margin-top: .3%;
+    margin-bottom: 3%;
+}
+
+.container-logo i {
+	font-size: 2rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+h2 {
+    font-family: 'Roboto';
+	text-decoration: none;
+	color: #000;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.success {
+    max-width: 600px; 
+    background-color: #4ca229;
+    color: var(--primary-color);
+    padding: 25px; 
+    border-radius: 5px;
+    margin: 20px auto;
+    font-weight: bold;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.error {
+    max-width: 600px; 
+    background-color: #FFA500;
+    color: var(--primary-color);
+    padding: 25px; 
+    border-radius: 5px;
+    margin: 20px auto;
+    font-weight: bold;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+/* WRAPPER DEL CONTENIDO */
+
+.wrapper {
+    background: #3AB795;
+    padding: 30px 80px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background:#fff;
+}
+
+.wrapper .title { 
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+/* TODAS LAS INPUT BOX */
+
+.input-box {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.input-box input {
+    width: 130%;
+    height: 100%;
+    margin-left: -15%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 20px;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* BOTON PARA CONTINUAR */
+
+.input-box.button [type="submit"]{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--background-color);
+    background-color:#353432;
+    border: 2px solid #ccc;
+    padding:0;
+    transform: none;
+    cursor: pointer;
+}
+
+.input-box.button [type="submit"]:hover{
+    color: var(--background-color);
+    background-color: #585855;
+}
+
+/* TEXTO TERMINOS */
+
+.terminos {
+    margin-top: 5%;
+    font-size: 14px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* LINK INICIAR SESION */
+
+.Login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.Login-link a{
+    text-decoration: none;
+    color: #009579;
+}
+
+.Login-link a:hover {
+    text-decoration: underline ;
+     
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: -10px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 15px; 
+    color: #1975e64e;
+    margin-left: 2px;
+}
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer a:hover {
+    color: var(--dark-color);
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: #1975e64e;
+}
+
+.linea-footer{
+    width: 100%;
+    border-bottom: 1px;
+    border: none;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    color: rgb(227, 219, 219);
+}
+
+.nombre_pagina {
+    font-weight: bold;
+    margin-top: 13px;
+    color: black;
+}
