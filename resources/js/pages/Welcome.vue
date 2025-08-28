@@ -13,6 +13,6 @@ defineProps<{ user: User }>();
 <template>
     <h1>
         Hola
-        <Link :href="route('hello')"> {{ user.name }}</Link>
+        <Link :href="route('hello')"> {{ user?.name }}</Link>
     </h1>
 </template>
