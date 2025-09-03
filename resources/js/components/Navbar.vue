@@ -24,7 +24,7 @@ const search = () => {
 </script>
 
 <template>
-    <nav class="z-10 grid h-20 w-full grid-cols-3 items-center bg-primary px-4 py-2 text-white">
+    <nav class="z-10 grid h-20 w-full grid-cols-3 items-center bg-primary px-7 py-2 text-white">
         <div class="flex items-center gap-2">
             <Link :href="route('home')" class="flex items-center gap-2">
                 <span class="text-2xl font-medium">D&D</span>
@@ -39,7 +39,7 @@ const search = () => {
                         v-model="query"
                         type="text"
                         placeholder="Busca un producto"
-                        class="z-[2] w-full rounded-l-full bg-primary-light px-4 py-2 transition duration-150 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                        class="z-[2] w-full rounded-l-full bg-primary-light px-4 py-2 transition duration-200 focus:ring-1 focus:ring-blue-500 focus:outline-none"
                     />
                     <button
                         type="submit"
@@ -54,9 +54,9 @@ const search = () => {
 
         <div class="flex justify-end">
             <div class="flex gap-4 rounded-full bg-primary-light p-2 px-5">
-                <User />
-                <div class="border border-gray-400"></div>
                 <ShoppingCart />
+                <div class="border border-gray-400"></div>
+                <User />
             </div>
         </div>
     </nav>
