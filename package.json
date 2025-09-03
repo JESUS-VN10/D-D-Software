@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "@inertiajs/vue3": "^2.0.0",
+        "@selemondev/svgl-vue": "^0.0.3",
         "@tailwindcss/vite": "^4.1.11",
         "@vitejs/plugin-vue": "^6.0.0",
         "@vueuse/core": "^12.8.2",

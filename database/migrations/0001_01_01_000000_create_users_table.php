@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name')->comment('Nombre');
             $table->string('email')->unique()->comment('Correo electrónico');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('document_number')->comment('Número de documento');
+            $table->string('document_number')->unique()->comment('Número de documento');
             $table->string('password')->comment('Contraseña');
 
             // Token de recuperación de contraseña

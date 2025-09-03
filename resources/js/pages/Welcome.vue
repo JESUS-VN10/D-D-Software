@@ -1,18 +1,13 @@
 <script setup lang="ts">
+import AppLayout from '@/layouts/AppLayout.vue';
 import { Link } from '@inertiajs/vue3';
-
-interface User {
-    id: number;
-    name: string;
-    email: string;
-}
-
-defineProps<{ user: User }>();
 </script>
 
 <template>
-    <h1>
-        Hola
-        <Link :href="route('hello')"> {{ user?.name }}</Link>
-    </h1>
+    <AppLayout>
+        <h1>
+            ¡Hola,
+            <Link :href="route('hello')">Julián culo de avispas!</Link>
+        </h1>
+    </AppLayout>
 </template>

@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Inertia\Inertia;
+use Inertia\Response;
 
 class HomeController extends Controller
 {
-    public function index(): \Inertia\Response
+    public function index(): Response
     {
         $user = User::first();
         return Inertia::render('Welcome', [
@@ -16,8 +17,8 @@ class HomeController extends Controller
         ]);
     }
 
-    public function hello(): \Inertia\Response
+    public function hello(): Response
     {
-        return Inertia::render('hello.Helloaa');
+        return Inertia::render('hello.Hello');
     }
 }
