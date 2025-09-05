@@ -16,7 +16,7 @@ import { Facebook, Twitter, Youtube, Instagram } from 'lucide-vue-next';
         </ul>
         <div class="flex gap-3 mt-5">
           <a href="#" class="w-8 h-8 flex items-center justify-center rounded-sm bg-blue-600">
-            <Facebook /> 
+            <Facebook />
           </a>
           <a href="#" class="w-8 h-8 flex items-center justify-center rounded-sm bg-sky-400">
             <Twitter />
