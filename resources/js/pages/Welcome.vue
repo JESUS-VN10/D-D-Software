@@ -7,6 +7,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 // import { Link } from '@inertiajs/vue3';
 
 defineOptions({
+    // TODO: Route to search page
     layout: AppLayout,
 });
 </script>
