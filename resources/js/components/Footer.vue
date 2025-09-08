@@ -4,6 +4,7 @@ import { Facebook, Twitter, Youtube, Instagram } from 'lucide-vue-next';
 </script>
 
 <template>
+  <div class="h-25"></div>
   <footer class="bg-primary text-white px-8 py-12">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10"> 
       <div>
