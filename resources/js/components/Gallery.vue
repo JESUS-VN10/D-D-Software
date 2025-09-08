@@ -6,7 +6,7 @@
   <div class="flex flex-col md:flex-row">
     <div class="flex-1">
       <img
-        src="/storage/images/resource/Gallery1.webp"
+        src="/storage/images/landing/resources/Gallery1.webp"
         alt="Galería 1"
         class="w-full h-[400px] md:h-[700px] object-cover"
         loading="lazy"
@@ -33,7 +33,7 @@
 
     <div class="flex-1">
       <img
-        src="/storage/images/resource/Gallery2.webp"
+        src="/storage/images/landing/resources/Gallery2.webp"
         alt="Galería 2"
         class="w-full h-[400px] md:h-[700px] object-cover"
         loading="lazy"

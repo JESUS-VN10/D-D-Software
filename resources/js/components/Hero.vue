@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="hero relative flex h-[500px] w-full items-center justify-center overflow-hidden">
+    <section class="hero relative flex h-[650px] w-full items-center justify-center overflow-hidden">
         <div class="relative z-2 m-5 flex w-full flex-col gap-y-3 text-white md:m-0 md:w-1/2">
             <p class="w-max bg-red-500 px-1 py-0.5 text-xs font-semibold text-background">¡Nuevas prendas!</p>
             <h2 class="text-4xl font-bold">
@@ -19,7 +19,7 @@
 
 <style scoped>
 .hero::before {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/storage/images/hero/2.webp');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/storage/images/landing/hero/2.webp');
 }
 
 .hero::before {

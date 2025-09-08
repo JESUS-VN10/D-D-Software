@@ -1,2 +1,6 @@
 *
+!images/
+!images/landing/
+!images/landing/**
+
 !.gitignore
